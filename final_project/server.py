@@ -15,7 +15,7 @@ def englishToFrench():
 @app.route("/frenchToEnglish")# Route Decorators
 def frenchToEnglish():
     textToTranslate = request.args.get('textToTranslate')
-    english_ext = mtrs.translator.frenchToEnglish(textToTranslate)
+    english_text = mtrs.translator.frenchToEnglish(textToTranslate)
     return english_text
 
 @app.route("/") # Default End-point
