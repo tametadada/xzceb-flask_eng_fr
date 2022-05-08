@@ -13,12 +13,12 @@ class TestTranslateFunctions(unittest.TestCase):
 
     def test_new(self):
         self.assertNotEqual(englishToFrench(
-            "I'm happy with the day"),
-            "je suis content de la journée"
+            "I'm happy today"),
+            "j'étais heureux hier"
         )
         self.assertNotEqual(frenchToEnglish(
-            "je suis content de la journée"),
-            "I'm happy with the day"
+            "j'étais heureux hier"),
+            "I'm happy today"
         )
 
 
